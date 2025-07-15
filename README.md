@@ -144,9 +144,14 @@ Terminate the source instance to simulate a disaster; the restored one carries o
 
 <a id="-architecture"></a>
 
-<p align="center">
-  <img src="diagram.png" width="580" alt="Architecture Diagram">
-</p>
+```mermaid
+graph TD
+    User[👤 User Browser] <-->|"HTTP 80"| EIP[🌐 Elastic IP]
+    EIP --> Restored[🖥 Restored EC2<br>(Apache)]
+    Restored -->|AMI created from| Snapshot[💾 AMI Snapshot]
+    Source[🖥 Source EC2] --> Snapshot
+    CF[⚙️ CloudFormation Stack] --> Restored
+
 
 ---
 

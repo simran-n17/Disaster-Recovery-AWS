@@ -145,7 +145,7 @@ Terminate the source instance to simulate a disaster; the restored one carries o
 <a id="-architecture"></a>
 ![](Screenshots/Architecture.png)
 
-```
+
 
 
 ## 🚀 Future Work

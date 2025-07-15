@@ -7,7 +7,7 @@
 <h1 align="center">🚨  Disaster Recovery System on AWS  🚨</h1>
 <p align="center">
   <i>“Because zero‑downtime is the best uptime.”</i><br>
-  <a href="http://http://3.214.81.126/" target="_blank">🌐&nbsp;Live Demo</a>  •  <a href="#-architecture">🖼 Architecture Diagram</a>
+  <a href="=http://3.214.81.126/" target="_blank">🌐&nbsp;Live Demo</a>  •  <a href="#-architecture">🖼 Architecture Diagram</a>
 </p>
 
 ---

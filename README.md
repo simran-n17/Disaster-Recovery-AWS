@@ -153,6 +153,23 @@ graph TD
     CF[⚙️ CloudFormation Stack] --> Restored
 
 
+---
+
+### ✅ Full Fix Instructions:
+
+1. **Replace your entire Architecture section** with the block above.
+2. Ensure there is **no extra backtick or missing backtick**.
+3. Keep everything after that (like `## 🚀 Future Work`) **outside** the code block.
+
+---
+
+### ✅ Final GitHub Preview Result
+
+GitHub will now **render the architecture diagram as a clean flowchart** using Mermaid.
+
+Let me know if you want me to validate your entire `README.md` end-to-end or generate a rendered HTML preview.
+
+
 ## 🚀 Future Work
 
 * 🔔 **CloudWatch Alarms** → trigger auto‑restore on instance‑status fail.

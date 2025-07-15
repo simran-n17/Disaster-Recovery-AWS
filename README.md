@@ -142,14 +142,12 @@ Terminate the source instance to simulate a disaster; the restored one carries o
 
 ## 🧭 Architecture
 
-## 🧭 Architecture
-
 <a id="-architecture"></a>
 
 ```mermaid
 graph TD
     User[👤 User Browser] <-->|"HTTP 80"| EIP[🌐 Elastic IP]
-    EIP --> Restored[🖥 Restored EC2<br>(Apache)]
+    EIP --> Restored[🖥 Restored EC2\n(Apache)]
     Restored -->|AMI created from| Snapshot[💾 AMI Snapshot]
     Source[🖥 Source EC2] --> Snapshot
     CF[⚙️ CloudFormation Stack] --> Restored

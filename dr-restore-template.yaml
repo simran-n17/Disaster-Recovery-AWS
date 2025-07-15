@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Restore EC2 instance from AMI
+
+Parameters:
+  InstanceType:
+    Type: String
+    Default: t2.micro
+    Description: EC2 instance type
+
+Resources:
+  RestoredInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-09145f395971d4de0
+      InstanceType: !Ref InstanceType
+      KeyName: KeyPair
+      SecurityGroupIds:
+        - sg-03254c44fd2951751
+      Tags:
+        - Key: Name
+          Value: Restored-From-AMI
+
+Outputs:
+  InstanceId:
+    Description: The Instance ID of the restored EC2 instance
+    Value: !Ref RestoredInstance
+
+  PublicIP:
+    Description: Public IP address of the restored instance
+    Value: !GetAtt RestoredInstance.PublicIp

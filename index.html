@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disaster Recovery System on AWS</title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --dark: #0d1b2a;
+      --light: #f5f5f5;
+      --accent: #ff6f61;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #1e90ff, #6dd5fa, #ffffff);
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2 {
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      margin-right: 8px;
+      margin-bottom: 6px;
+    }
+
+    code {
+      background-color: #f0f0f0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 50px;
+    }
+
+    .highlight {
+      background-color: #ffe8e8;
+      border-left: 5px solid var(--accent);
+      padding: 15px 20px;
+      margin-top: 10px;
+      font-weight: bold;
+      border-radius: 6px;
+      color: #d8000c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚨 Disaster Recovery System on AWS</h1>
+
+    <div class="section">
+      <h2>🛠️ Tech Stack</h2>
+      <span class="badge">AWS EC2</span>
+      <span class="badge">S3</span>
+      <span class="badge">AMI</span>
+      <span class="badge">Snapshots</span>
+      <span class="badge">CloudFormation</span>
+    </div>
+
+    <div class="section">
+      <h2>📌 Overview</h2>
+      <p>
+        This project demonstrates a fully automated <strong>Disaster Recovery (DR)</strong> solution on AWS. In case of infrastructure failure, the system can restore its EC2 instance with pre-baked data and a web server, all triggered from a <code>CloudFormation</code> script.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🚀 Key Steps Performed</h2>
+      <ol>
+        <li>Launched a Source EC2 Instance with a simple Apache web server.</li>
+        <li>Customized its webpage to say <code>Hello from DR Source Instance 🎉</code>.</li>
+        <li>Created an AMI snapshot of the instance.</li>
+        <li>Wrote and executed a CloudFormation script to restore the instance in case of failure.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>✅ Final Output</h2>
+      <div class="highlight">
+        When the restored EC2 instance's public IP is opened in a browser:<br>
+        <code>Hello from DR Source Instance 🎉</code>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📂 Project Files</h2>
+      <ul>
+        <li><code>dr-restore.yaml</code> – CloudFormation script to automate restoration</li>
+        <li><code>index.html</code> – This project page</li>
+        <li><code>README.md</code> – Documentation & instructions</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2025 Disaster Recovery Project • Built with 💙 on AWS
+    </div>
+  </div>
+
+</body>
+</html>

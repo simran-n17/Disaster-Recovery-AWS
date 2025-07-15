@@ -1,7 +1,3 @@
-Below is a ready‑to‑paste **`README.md`** that’s polished, recruiter‑friendly, and tells the whole story of your Disaster Recovery project.
-Feel free to swap the placeholder links (`<ELASTIC_IP>`, `AMI_ID`, etc.) with your real values and move/rename screenshots as needed.
-
-````markdown
 <!--
 ###############################################################
 #            DISASTER RECOVERY SYSTEM ON AWS – README          #
@@ -123,7 +119,7 @@ Terminate the source instance to simulate a disaster; the restored one carries o
 
 |         Source Instance         |        AMI Created       |   CloudFormation Stack   |         Restored Instance         |        Web Output        |
 | :-----------------------------: | :----------------------: | :----------------------: | :-------------------------------: | :----------------------: |
-| ![](screenshots/EC2-Instances.png) | ![](screenshots/AMI.png) | ![](screenshots/Create-Stack.png) | ![](screenshots/DR-Restore-Stack-CreateComplete.png) | ![](screenshots/Output.png) |
+| ![](Screenshots/EC2-Instances.png) | ![](Screenshots/AMI.png) | ![](Screenshots/Create-Stack.png) | ![](Screenshots/DR-Restore-Stack-CreateComplete.png) | ![](Screenshots/Output.png) |
 
 ---
 
